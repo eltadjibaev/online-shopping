@@ -59,7 +59,7 @@
 	<div class="wrapper">
 
 		<!-- Navigation -->
-
+		<%@include file="./shared/navbar.jsp" %>
 
 		<!-- Page Content -->
 
@@ -67,17 +67,17 @@
 			
 			<!-- Loading the home content -->
 			<c:if test="${userClickHome == true }">
-				
+				<%@include file="home.jsp" %>
 			</c:if>
 
 			<!-- Load only when user clicks about -->
 			<c:if test="${userClickAbout == true }">
-				
+				<%@include file="about.jsp" %>
 			</c:if>
 
 			<!-- Load only when user clicks contact -->
 			<c:if test="${userClickContact == true }">
-				
+				<%@include file="contact.jsp" %>
 			</c:if>
 			
 			<!-- Load only when user clicks contact -->
@@ -105,7 +105,7 @@
 
 
 		<!-- Footer comes here -->
-		
+		<%@include file="./shared/footer.jsp" %>
 
 		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
